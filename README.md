@@ -21,7 +21,6 @@ Dans un contexte où la restauration rapide repose de plus en plus sur la livrai
 - Proposer des **recommandations opérationnelles** exploitables par un manager retail/logistique.
 
 
-
 ## Méthodologie
 
 Ce projet repose sur l'analyse d’un dataset simulant l’activité d’une pizzeria en ligne, avec des tables SQL représentant les :
