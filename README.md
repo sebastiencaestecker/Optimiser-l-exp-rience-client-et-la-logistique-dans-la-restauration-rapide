@@ -1,65 +1,77 @@
-# 🍕 Pizza Runner SQL Analysis
+# 🍕 Optimisation logistique et produit dans une pizzeria digitalisée
 
-## 📌 Présentation du projet
-Ce projet vise à explorer les données de **Pizza Runner**, une entreprise de livraison de pizzas, afin d'analyser ses performances commerciales, la gestion des livreurs, et l'optimisation des ingrédients.  
-L'objectif est de répondre à une série de **questions analytiques** en utilisant **SQL**, et d'extraire des **insights clés** sur les commandes, les livraisons et les revenus.
+## Secteur ciblé : Retail / Restauration rapide / Logistique du dernier kilomètre
 
 ---
 
-## 📊 Catégories d'analyse
+##  Problématique
+**Comment améliorer l’efficacité des livraisons, la satisfaction client, et la rentabilité des menus dans un modèle de restauration rapide digitalisée ?**
 
-### 🍕 A. Pizza Metrics (Analyse des Commandes)
-Cette section se concentre sur les commandes passées et livrées :
-- **Nombre total de pizzas commandées :** 
-- **Nombre de commandes clients uniques :** 
-- **Nombre de commandes réussies livrées :** 
-- **Nombre de chaque type de pizza livrée**
-- **Nombre de pizzas végétariennes vs Meatlovers par client**
-- **Commande avec le plus grand nombre de pizzas :** 
-- **Commandes modifiées vs non modifiées**
-- **Pizzas avec exclusions & extras**
-- **Volume des commandes par heure et jour**
+Dans un contexte où la restauration rapide repose de plus en plus sur la livraison à domicile, les chaînes de pizzas font face à un triple enjeu :
+- assurer une **livraison rapide et fiable**,
+- **personnaliser les recettes** sans complexifier la préparation,
+- **maximiser la rentabilité** de chaque commande.
 
-📌 *Les requêtes SQL permettent d'analyser le comportement des clients et les tendances de commande.*
 
----
 
-### 🚴 B. Runner and Customer Experience (Performance des Livreurs)
-Cette section se concentre sur les livreurs et l’expérience client :
-- **Inscriptions des livreurs par semaine**
-- **Temps moyen pour récupérer une commande**
-- **Relation entre le nombre de pizzas et le temps de préparation**
-- **Distance moyenne parcourue par client**
-- **Différence entre la livraison la plus rapide et la plus lente**
-- **Vitesse moyenne des livreurs**
-- **Pourcentage de livraisons réussies par livreur**
+##  But du projet
+- Analyser les données clients, livreurs et recettes pour identifier les **points de friction** dans la chaîne de valeur.
+- Comprendre les comportements d’achat et les préférences clients.
+- Mesurer l’impact des personnalisations sur le temps de livraison.
+- Proposer des **recommandations opérationnelles** exploitables par un manager retail/logistique.
 
-📌 *Analyse détaillée de la performance des livreurs et des délais de livraison.*
 
----
 
-### 🥗 C. Ingredient Optimisation (Gestion des Ingrédients)
-Cette section vise à optimiser la gestion des ingrédients :
-- **Ingrédients standards pour chaque pizza**
-- **Topping le plus utilisé**
-- **Exclusion la plus fréquente**
-- **Liste alphabétique des ingrédients par commande**
-- **Quantité totale des ingrédients utilisés dans les pizzas livrées**
+## Méthodologie
 
-📌 *Permet d'identifier les tendances sur les préférences des clients et d’optimiser la gestion des stocks.*
+Ce projet repose sur l'analyse d’un dataset simulant l’activité d’une pizzeria en ligne, avec des tables SQL représentant les :
+- commandes clients
+- livreurs et leurs performances
+- recettes et ingrédients
 
----
+###  1. Analyse commerciale
+- Volume de pizzas par jour/heure
+- Préférences clients (Meatlovers, Végétarienne, etc.)
+- Commandes modifiées vs standard
 
-### 💰 D. Pricing and Ratings (Analyse des Revenus & Notations)
-Cette section se concentre sur les finances et l’évaluation des livreurs :
-- **Revenu total avant et après prise en compte des extras**
-- **Système de notation des livreurs**
-- **Impact des paiements des livreurs (0,30$/km) sur le profit net**
+###  2. Analyse logistique
+- Taux de livraisons réussies vs annulées
+- Temps et vitesse moyenne de livraison
+- Estimation du coût de livraison (0.30 $/km)
 
-📌 *Permet d’évaluer la rentabilité de l’entreprise et l’efficacité des livreurs.*
+###  3. Optimisation des recettes
+- Toppings les plus populaires
+- Ingrédients les plus souvent exclus
+- Recettes complexes → pistes de simplification
 
----
 
-## 🛠️ Technologies et outils utilisés
-- **SQL (SQL Server)** : Requêtes analytiques et transformations de données
+##  Résultats Obtenus
+
+- **64 %** des pizzas livrées sont modifiées (exclusions ou extras) → complexité accrue
+- Temps de livraison **+30 %** pour les commandes personnalisées
+- Les pizzas végétariennes sont les plus personnalisées
+- Forte disparité entre livreurs : vitesse moyenne de **10 à 20 km/h**
+- Taux de livraison réussie global : **87 %**
+
+
+## Recommandations métier
+
+- Réduire la carte aux recettes les plus commandées avec le moins de modifications
+- Simplifier la personnalisation via des combinaisons prédéfinies
+- Former les livreurs les plus lents ou les affecter en heures creuses
+- Optimiser les achats d’ingrédients en fonction des exclusions fréquentes
+- Proposer un bonus logistique basé sur performance (vitesse, distance)
+
+
+##  Intentions d’apprentissage
+
+Ce projet m’a permis de :
+- Approfondir la **modélisation temporelle** dans SQL (temps de commande vs livraison)
+- Manipuler des fonctions avancées (`STRING_SPLIT`, `STRING_AGG`, `CASE`, `CAST`)e
+- Travailler la **logique métier retail** et formuler des recommandations activables
+- Traduire une base de données en **décisions stratégiques**
+- Créer des analyses **actionnables** pour les métiers de la logistique, du retail ou de la restauration
+- **Restituer la donnée** de façon claire, visuelle et compréhensible
+- Travailler à la **croisée de la technique, de l’expérience client et de l’optimisation opérationnelle**
+
 
