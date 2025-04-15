@@ -1,4 +1,4 @@
-# 🍕 Optimisation logistique et produit dans une pizzeria digitalisée
+# 🍕 Optimisation logistique et produit dans une pizzeria digitalisée- SQL
 
 ## Secteur ciblé : Retail / Restauration rapide / Logistique du dernier kilomètre
 
