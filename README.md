@@ -69,9 +69,7 @@ Ce projet m’a permis de :
 - Manipuler des fonctions avancées (`STRING_SPLIT`, `STRING_AGG`, `CASE`, `CAST`)e
 - Travailler la **logique métier retail** et formuler des recommandations activables
 - Traduire une base de données en **décisions stratégiques**
-- Créer des analyses **actionnables** pour les métiers de la logistique, du retail ou de la restauration
 - **Restituer la donnée** de façon claire, visuelle et compréhensible
-- Travailler à la **croisée de la technique, de l’expérience client et de l’optimisation opérationnelle**
 
 ## Exemple de requetes
 
